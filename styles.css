@@ -155,3 +155,26 @@ header {
 .hero-illustration {
   animation: float 3s ease-in-out infinite;
 }
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 1000;
+}
+
+.cart-content {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 2rem;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
