@@ -141,3 +141,17 @@ header {
   opacity: 0.9;
   transform: scale(1.05);
 }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-illustration {
+  animation: float 3s ease-in-out infinite;
+}
