@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Масляный фильтр",
+        "price": 1500,
+        "image": "filter.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Тормозные колодки",
+        "price": 4500,
+        "image": "brake-pads.jpg"
+    }
+]

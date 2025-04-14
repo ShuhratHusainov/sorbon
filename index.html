@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SORBON — магазин автозапчастей. Оригинальные запчасти с доставкой по России">
+    <meta name="keywords" content="автозапчасти, автотовары, SORBON, купить запчасти">
+    <title>SORBON — Магазин автозапчастей</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 768px)">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="SORBON Logo" width="100">
+            <h1>SORBON</h1>
+        </div>
+        
+        <!-- Навигация -->
+        <nav class="nav">
+            <a href="#catalog">Каталог</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#delivery">Доставка</a>
+            <div class="cart-icon" onclick="openCart()">🛒 <span id="cart-count">0</span></div>
+        </nav>
+    </header>
+
+    <!-- Попап корзины -->
+    <div class="cart-popup" id="cartPopup">
+        <h3>Ваша корзина</h3>
+        <div id="cartItems"></div>
+        <p>Итого: <span id="cartTotal">0</span> ₽</p>
+        <button class="btn" onclick="closeCart()">Закрыть</button>
+        <button class="btn btn-primary" onclick="window.location.href='checkout.html'">Оформить заказ</button>
+    </div>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="hero">
+            <h2>Оригинальные автозапчасти</h2>
+            <p>Быстрая доставка по всей России</p>
+        </section>
+
+        <!-- Каталог товаров -->
+        <section id="catalog" class="catalog">
+            <h2>Каталог</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Товары будут загружены через JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer" id="contacts">
+        <div class="contact-info">
+            <p>📞 +7 (999) 123-45-67</p>
+            <p>📍 Москва, ул. Автозапчастей, 15</p>
+        </div>
+        <p class="copyright">© 2023 SORBON</p>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="scripts/firebase.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
