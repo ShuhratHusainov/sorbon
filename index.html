@@ -26,15 +26,21 @@
             <div class="cart-icon" onclick="openCart()">🛒 <span id="cart-count">0</span></div>
         </nav>
     </header>
-
-    <!-- Попап корзины -->
-    <div class="cart-popup" id="cartPopup">
-        <h3>Ваша корзина</h3>
-        <div id="cartItems"></div>
-        <p>Итого: <span id="cartTotal">0</span> ₽</p>
-        <button class="btn" onclick="closeCart()">Закрыть</button>
-        <button class="btn btn-primary" onclick="window.location.href='checkout.html'">Оформить заказ</button>
+ <!-- корзина -->
+  <div class="cart-modal" id="cartModal">
+  <div class="cart-content">
+    <h3>🛒 Ваша корзина</h3>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total">
+      <span>Итого:</span>
+      <span id="cartTotal">0 ₽</span>
     </div>
+    <div class="cart-actions">
+      <button class="btn" onclick="closeCart()">Продолжить покупки</button>
+      <button class="btn btn-accent">Оформить заказ</button>
+    </div>
+  </div>
+</div>
 
     <!-- Основной контент -->
     <main>
